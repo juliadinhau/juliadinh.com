@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Julia Dinh</title>
+  <title>Julia Dinh | Actor & Creator</title>
+  <meta name="description" content="Julia Dinh – Actor, Voice-Over Artist, Model & UGC Creator based in Melbourne. Portfolio & contact at juliadinh.com">
+  <meta property="og:title" content="Julia Dinh | Actor & Creator">
+  <meta property="og:description" content="Melbourne-based actor & creator. Portfolio, showreels & contact at juliadinh.com">
+  <meta property="og:image" content="https://juliadinh.com/headshot-v2.JPG">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <style>
     /* Curtain-style background */
     body {
@@ -19,8 +24,9 @@
       );
       min-height: 100vh;
       font-family: sans-serif;
+      background-position: center;
     }
-    /* White “stage” container, centered text */
+    /* White “stage” container */
     .container {
       max-width: 800px;
       margin: 2rem auto;
@@ -29,59 +35,81 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    section { margin: 2rem 0; text-align: left; line-height: 1.5; }
+    h2 { margin-bottom: 0.5rem; }
+    .video-container { max-width: 560px; margin: 1.5rem auto; }
+    ul { list-style: none; padding: 0; }
+    li + li { margin-top: 0.5rem; }
+    /* Button style for primary CTAs */
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #1a0dab;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      margin: 0.25rem;
     }
-    li + li {
-      margin-top: 0.5rem;
-    }
-    /* Blue, underlined links */
-    a {
+    .btn:hover { opacity: 0.9; }
+    /* Link style */
+    a:not(.btn) {
       color: #1a0dab;
       text-decoration: underline;
     }
-    a:hover {
-      text-decoration: underline;
+    a:not(.btn):hover { text-decoration: underline; }
+    /* Footer styling */
+    footer { font-size: 0.9rem; color: #555; margin-top: 2rem; }
+    footer a { color: #1a0dab; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    /* Mobile tweaks */
+    @media (max-width: 400px) {
+      .container { margin: 1rem; padding: 1rem; }
     }
   </style>
 </head>
-<body>
+<body id="top">
   <div class="container">
     <img src="headshot-v2.JPG" alt="Julia Dinh headshot"
-     style="border-radius:50%;width:150px;height:150px;margin-bottom:1rem">
+      style="border-radius:50%;width:150px;height:150px;margin-bottom:1rem">
     <h1>Julia Dinh</h1>
     <p>Actor · Voice-Over Artist · Model · UGC Creator</p>
-    <section id="about-me" style="margin:2rem 0;text-align:left;line-height:1.5">
-  <h2>About Me</h2>
-  <p>
-    I’m based in Melbourne.
-    I’ve worked with brands like Learning Consent, Mamao Thai, Knipler Films, and my indie horror
-    short “Deadly Disturbance” just wrapped post-production.
-  </p>
-      <div style="max-width:560px;margin:2rem auto;">
-  <iframe
-    width="100%" height="315"
-    src="https://www.youtube.com/embed/PmtunBTr1BU"
-    title="Julia Dinh Actor Self-Introduction"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-</div>
-</section>
-    <ul>
-      <li><a href="https://www.starnow.com/u/Julia_D/">StarNow Portfolio</a></li>
-      <li><a href="mailto:contact@juliadinh.com">Email Me</a></li>
-      <li><a href="https://youtube.com/@juliadinhau">YouTube</a></li>
-      <li><a href="https://www.instagram.com/juliadinhau">Instagram</a></li>
-      <li><a href="https://www.tiktok.com/@juliadinhau">TikTok</a></li>
-      <li><a href="https://paypal.me/JuliaDinhAU">Support Me</a></li>
-      <li><a href="https://gravatar.com/ambitious4c07f8543f">My Gravatar Profile</a></li>
-    </ul>
-    <p style="font-size:0.9rem;color:#555;margin-top:2rem;">
-  *For urgent inquiries, please also cc 
-  <a href="mailto:julia.dinh.au@gmail.com">julia.dinh.au@gmail.com</a>.
-</p>
+
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>
+        I’m based in Melbourne. I’ve worked with brands like 
+        <em>Learning Consent</em>, <em>Mamao Thai</em>, <em>Knipler Films</em>, 
+        and my indie horror short <em>Deadly Disturbance</em> just wrapped post-production.
+      </p>
+      <div class="video-container">
+        <iframe width="100%" height="315"
+          src="https://www.youtube.com/embed/PmtunBTr1BU"
+          title="Julia Dinh Actor Self-Introduction"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section id="connect">
+      <h2>Connect</h2>
+      <ul>
+        <li><a href="https://www.starnow.com/u/Julia_D/">StarNow Portfolio</a></li>
+        <li><a class="btn" href="mailto:contact@juliadinh.com">Email Me</a></li>
+        <li><a href="https://youtube.com/@juliadinhau">YouTube</a></li>
+        <li><a href="https://www.instagram.com/juliadinhau">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@juliadinhau">TikTok</a></li>
+        <li><a class="btn" href="https://paypal.me/JuliaDinhAU">Support Me</a></li>
+        <li><a href="https://gravatar.com/ambitious4c07f8543f">My Gravatar Profile</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p><strong>Footnote:</strong> For urgent inquiries, please also cc 
+        <a href="mailto:julia.dinh.au@gmail.com">julia.dinh.au@gmail.com</a>.
+      </p>
+      <p><a href="#top">↑ Back to top</a></p>
+    </footer>
   </div>
 </body>
 </html>
